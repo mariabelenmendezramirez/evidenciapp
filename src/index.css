@@ -1,0 +1,59 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f1117;
+  --bg2: #171b26;
+  --bg3: #1e2330;
+  --bg4: #252b3b;
+  --border: #2a3148;
+  --border2: #3a4460;
+  --text: #e8eaf0;
+  --text2: #9aa3b8;
+  --text3: #6b7494;
+  --accent: #4f7cff;
+  --accent2: #3a63e8;
+  --danger: #ff5c7a;
+  --warn: #ffa340;
+  --success: #4fcf80;
+  --card: #1a1f2e;
+  --radius: 10px;
+  --radius2: 6px;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+input, select, textarea {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius2);
+  padding: 8px 11px;
+  font-size: 13px;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  outline: none;
+  transition: border .15s;
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent);
+}
+
+select option { background: var(--bg3); }
+textarea { resize: vertical; min-height: 72px; }
+
+button {
+  padding: 8px 16px;
+  border-radius: var(--radius2);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all .15s;
+  font-family: 'DM Sans', sans-serif;
+}
