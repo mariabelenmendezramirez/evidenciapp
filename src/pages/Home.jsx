@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import Header from './components/Header.jsx'
-import EvidenceForm from './components/EvidenceForm.jsx'
-import EvidenceList from './components/EvidenceList.jsx'
-import EvaluationBadge from './components/EvaluationBadge.jsx'
-import Modal from './components/Modal.jsx'
-import Chat from './components/Chat.jsx'
+import Header from '../components/Header.jsx'
+import EvidenceForm from '../components/EvidenceForm.jsx'
+import EvidenceList from '../components/EvidenceList.jsx'
+import EvaluationBadge from '../components/EvaluationBadge.jsx'
+import Modal from '../components/Modal.jsx'
+import Chat from '../components/Chat.jsx'
 
 export default function Home() {
   const [tab, setTab] = useState('evidencias')
